@@ -1,8 +1,10 @@
 # Phortfolio
 ##### Photography + Portfolio = Phortfolio
 
-![Index](/res/index.png?raw=true)
-![Example](/res/picture.png?raw=true)
+<p align="center">
+  <img src="/res/index.png?raw=true" alt="Index">
+  <img src="/res/picture.png?raw=true" alt="Example">
+</p>
 
 ## What is this?
 Is a simple portfolio template for helping photographers/designers/any creative people to show their art on the Internet in a easier way. It's responsive, features cool things like filtering pictures depending on the category (you can check it in the "People" and "Architecture" sections in "Pictures" on the demo), an image comparison slider inside the lightbox (you can check it in the "Editing" section in "Pictures on the demo) and tries (do not take this as 100% compliant as I'm not an expert) to be respectful with the privacy of the users (check the messages in "Contact" and "Videos"). It also implements Open Graph to make it look cooler when people shares it on social networks.
