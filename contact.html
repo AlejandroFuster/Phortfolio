@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phortfolio</title>
+    <meta name="description" content="Sample template for portfolio">
+    <meta property="og:title" content="Phortfolio" />
+    <meta property="og:url" content="/contact.html" />
+    <meta property="og:description" content="Sample template for portfolio">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="es_ES" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="res/custom.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6abc2f7ce1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.svg">
+</head>
+
+<body>
+    <div class="container-fluid bg-dark" id="mainContainer">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="res/logo.svg" width="70" class="d-inline-block align-top" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="images.html">Pictures</a>
+                    <a class="nav-item nav-link" href="videos.html">Videos</a>
+                    <a class="nav-item nav-link" href="aboutme.html">About me</a>
+                    <a class="nav-item nav-link active" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Error</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modalbody">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">De acuerdo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="jumbotron px-3 py-3 rounded bg-secondary text-white" id="formContainer">
+                    <noscript>
+                        <div class="border border-white text-center p-3 bg-secondary rounded">
+                            <h2>Privacy matters!</h2>
+                            <hr class="my-4">
+                            <h4>This contact form is handled by a third party (www.formspree.io).<br><br>By submitting this form, you agree the <a href="https://formspree.io/legal/terms-of-service" class="text-white">terms of service</a> and the <a href="https://formspree.io/legal/privacy-policy" class="text-white">privacy policy</a> of www.formspree.io</h4><br>
+                        </div>
+                        <form action="https://formspree.io/f/{form_id}" method="POST" id="contact">
+                            <h1 class="display-4">Contact me!</h1>
+                            <hr class="my-4">
+                            <div class="form-group">
+                                <label for="nombre">Name<span class="red">*</span></label>
+                                <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="nombre" placeholder="Enter your name" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-Mail<span class="red">*</span></label>
+                                <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter your e-mail" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="asunto">Subject<span class="red">*</span></label>
+                                <input type="text" class="form-control" id="asunto" aria-describedby="asunto" placeholder="What are we going to talk about?" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Message</label>
+                                <textarea class="form-control" id="mensaje" aria-describedby="mensaje" rows="3" placeholder="Write your message"></textarea>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-light">Submit</button>
+                        </form>
+                    </noscript>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <footer class="fixed-bottom">
+        <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2)">
+            Pictures retrevied in <span id="year"></span>
+            <a class="text-dark" href="/"> from unsplash.com
+        </div>
+    </footer>
+    <script type="text/javascript">
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
+    function getCookie(name) {
+        var dc = document.cookie;
+        var prefix = name + "=";
+        var begin = dc.indexOf("; " + prefix);
+        if (begin == -1) {
+            begin = dc.indexOf(prefix);
+            if (begin != 0) return null;
+        } else {
+            begin += 2;
+            var end = document.cookie.indexOf(";", begin);
+            if (end == -1) {
+                end = dc.length;
+            }
+        }
+        // because unescape has been deprecated, replaced with decodeURI
+        //return unescape(dc.substring(begin + prefix.length, end));
+        return decodeURI(dc.substring(begin + prefix.length, end));
+    }
+
+    $(document).ready(function() {
+        var CookieGet = getCookie('formularioAceptado');
+        if (CookieGet != null) {
+            document.getElementById("formContainer").innerHTML = formulario
+        } else {
+            document.getElementById("formContainer").innerHTML = pregunta
+        }
+    });
+
+    if ($("<input />").prop("required") === undefined) {
+        $(document).on("submit", function(e) {
+            $(this)
+                .find("input, select, textarea")
+                .filter("[required]")
+                .filter(function() { return this.value == ''; })
+                .each(function() {
+                    e.preventDefault();
+                    $(this).css({ "border-color": "red" });
+                    alert($(this).prev('label').html() + " ");
+                });
+        });
+    }
+
+    var formulario = `<form action="https://formspree.io/f/{form_id}" method="POST" id="contact">
+        <h1 class="display-4">Contact me!</h1>
+        <hr class="my-4">
+        <div class="form-group">
+            <label for="nombre">Name<span class="red">*</span></label>
+            <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="nombre" placeholder="Enter your name" required="">
+        </div>
+        <div class="form-group">
+            <label for="email">E-Mail<span class="red">*</span></label>
+            <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter your e-mail" required="">
+        </div>
+        <div class="form-group">
+            <label for="asunto">Subject<span class="red">*</span></label>
+            <input type="text" class="form-control" id="asunto" aria-describedby="asunto" placeholder="What are we going to talk about?" required="">
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Message</label>
+            <textarea class="form-control" id="mensaje" aria-describedby="mensaje" rows="3" placeholder="Write your message"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-light">Submit</button>
+    </form>`
+
+    var pregunta = `<div class="border border-white text-center p-3 bg-secondary rounded">
+        <h2>Privacy matters!</h2>
+        <hr class="my-4">
+        <h4>This contact form is handled by a third party (www.formspree.io).<br><br>By showing and submitting this form, you agree the <a href="https://formspree.io/legal/terms-of-service" class="text-white">terms of service</a> and the <a href="https://formspree.io/legal/privacy-policy" class="text-white">privacy policy</a> of www.formspree.io</h4><br>
+          <button type="button" class="btn btn-light" onclick="aceptaFormulario();">
+          Show form
+          </button>
+          <br><br>
+          <input class="form-check-input" type="checkbox" value="" id="aceptForm">
+          <label class="form-check-label" for="aceptForm">
+            Remember my choice*
+          </label>
+          <p class="text-white">*Your choice will be saved in a cookie managed by this website until you've closed your browser.</p>
+        </div>`
+
+    function aceptaFormulario() {
+        var acept = document.getElementById("aceptForm");
+        acept.disabled = true;
+        if (acept.checked === true) {
+            console.log("Holi")
+            document.cookie = "formularioAceptado=true;SameSite=strict;secure=true";
+        }
+        document.getElementById("formContainer").innerHTML = formulario
+    }
+    </script>
+</body>
+
+</html>
